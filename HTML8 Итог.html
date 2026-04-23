@@ -1,1 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вложенный список</title>
+    <style>
+        .primary-list {
+            font-family: "Arial Black", sans-serif;
+            font-size: 20px;
+            color: #2c3e50;
+            list-style-type: square;
+        }
 
+        .secondary-list {
+            font-family: "Verdana", sans-serif;
+            font-size: 16px;
+            color: #e67e22;
+            list-style-type: circle;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="primary-list">
+        <li>Транспорт
+            <ul class="secondary-list">
+                <li>Машина</li>
+                <li>Троллейбус</li>
+            </ul>
+        </li>
+        <li>Овощи
+            <ul class="secondary-list">
+                <li>Картофель</li>
+                <li>Морковь</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
