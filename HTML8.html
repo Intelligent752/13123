@@ -1,8 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <title>таблица</title>
+    <meta charset="UTF-8">
+    <title>Таблица цветов</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            font-family: sans-serif;
+        }
+        td {
+            border: 1px solid #333;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        /* Привязка цвета к id каждой ячейки */
+        #color1 { background-color: #FF5733; } /* Красный */
+        #color2 { background-color: #33FF57; } /* Зеленый */
+        #color3 { background-color: #3357FF; } /* Синий */
+        #color4 { background-color: #F333FF; } /* Фиолетовый */
+        #color5 { background-color: #FFD433; } /* Желтый */
+    </style>
 </head>
-  <body>
-  <h1 aligh="left">Таблица</h1>
-  </body>
+<body>
+
+    <h2>Моя палитра</h2>
+    <table>
+        <tr><td id="color1">Коралловый</td></tr>
+        <tr><td id="color2">Ярко-зеленый</td></tr>
+        <tr><td id="color3">Насыщенный синий</td></tr>
+        <tr><td id="color4">Маджента</td></tr>
+        <tr><td id="color5">Солнечный желтый</td></tr>
+    </table>
+
+</body>
 </html>
+
