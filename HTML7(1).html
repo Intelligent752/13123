@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Элементы форм</title>
+</head>
+<body>
+    <h1 align="center">Использование форм в HTML-документах</h1>
+
+    <!-- Форма 1: Информация о пользователе -->
+    <h3 align="center">Информация о пользователе (форма 1)</h3>
+    <form name="myForm1">
+        Фамилия: <input type="text" name="lastname" value="Иванов" readonly><br>
+        Имя: <input type="text" name="firstname" value="Иван"><br>
+        Отчество: <input type="text" name="middlename" value="Иванович"><br>
+        Возраст: <input type="text" name="age" value="20" size="3" maxlength="3"><br>
+        Пароль: <input type="password" name="pass" value="12345"><br>
+        Адрес E-mail: <input type="text" name="email" value="ivanov@mail.ru"><br>
+        <p align="center">
+            Комментарий:<br>
+            <textarea name="comment" rows="4" cols="40">Введите здесь свой комментарий</textarea>
+        </p>
+    </form>
+
+    <hr>
+
+    <!-- Форма 2: С использованием fieldset и legend -->
+    <h3 align="center">Информация о пользователе (форма 2)</h3>
+    <form name="myForm2">
+        <fieldset>
+            <legend align="center" style="color: red; font-style: italic;">Сведения о пользователе</legend>
+            Фамилия (<u><b>F</b></u>): <input type="text" name="lastname2" value="Иванов" accesskey="f"><br>
+            Имя: <input type="text" name="firstname2" value="Иван"><br>
+            Отчество: <input type="text" name="middlename2" value="Иванович"><br>
+            <label for="age">Возраст</label>: <input type="text" id="age" name="age2" value="20" size="3" maxlength="3"><br>
+            Пароль: <input type="password" name="pass2" value="12345"><br>
+            Адрес E-mail: <input type="text" name="email2" value="ivanov@mail.ru"><br>
+            <input type="reset" value="Сброс">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Форма 3: Радиокнопки -->
+    <h3 align="center">Радиокнопки (форма 3)</h3>
+    <form name="myForm3">
+        <fieldset>
+            <legend>Моя любимая эстрадная группа</legend>
+            <input type="radio" name="Groups" value="group1"> Кино<br>
+            <input type="radio" name="Groups" value="group2" checked> Би-2<br>
+            <input type="radio" name="Groups" value="group3"> Сплин<br>
+            <input type="radio" name="Groups" value="group4"> ДДТ<br>
+            <input type="radio" name="Groups" value="group5"> Ария<br>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Форма 4: Флажки -->
+    <h3 align="center">Флажки (форма 4)</h3>
+    <form name="myForm4">
+        <fieldset>
+            <legend>Мои любимые эстрадные исполнители</legend>
+            <input type="checkbox" name="artist1"> Виктор Цой<br>
+            <input type="checkbox" name="artist2" checked> Земфира<br>
+            <input type="checkbox" name="artist3"> Борис Гребенщиков<br>
+            <input type="checkbox" name="artist4"> Юрий Шевчук<br>
+            <input type="checkbox" name="artist5"> Вячеслав Бутусов<br>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Форма 5: Выдвижные списки -->
+    <h3 align="center">Выдвижные списки (форма 5)</h3>
+    <form name="myForm5">
+        <fieldset>
+            <legend>Десять штатов США</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <td>
+                        <select name="state1">
+                            <option>Алабама</option>
+                            <option>Аляска</option>
+                            <option selected>Аризона</option>
+                            <option>Арканзас</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="state2" size="5">
+                            <option>Калифорния</option>
+                            <option>Колорадо</option>
+                            <option selected>Коннектикут</option>
+                            <option>Делавэр</option>
+                            <option>Флорида</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="state3" size="5" multiple>
+                            <option>Джорджия</option>
+                            <option>Гавайи</option>
+                            <option selected>Айдахо</option>
+                            <option>Иллинойс</option>
+                            <option>Индиана</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Форма 6: Дополнительные элементы -->
+    <h3 align="center">Дополнительные элементы (форма 6)</h3>
+    <form name="myForm6">
+        <fieldset>
+            <legend>Дополнительные элементы форм</legend>
+            Выберите файл: <input type="file" name="fileUpload"><br><br>
+            Отправить через изображение:<br>
+            <input type="image" src="sky.gif" alt="Submit" width="50">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Форма 7: Передача формы -->
+    <h3 align="center">Передача формы (форма 7)</h3>
+    <form name="myForm7" method="get" action="">
+        <fieldset>
+            <legend>Передача формы</legend>
+            Фамилия: <input type="text" name="familija"><br>
+            Имя: <input type="text" name="imja"><br>
+            Пол: 
+            <input type="radio" name="sex" value="male"> Мужской
+            <input type="radio" name="sex" value="female"> Женский<br><br>
+            <input type="submit" value="Submit (Подача запроса)">
+            <input type="reset" value="Сброс">
+        </fieldset>
+    </form>
+</body>
+</html>
